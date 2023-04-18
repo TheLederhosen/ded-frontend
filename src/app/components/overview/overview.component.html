@@ -1,0 +1,41 @@
+<div class="my-container">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title>Current air quality</mat-card-title>
+      <mat-card-subtitle>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+      </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-divider></mat-divider>
+      <div class="gauge">
+        <mwl-gauge
+          [max]="5000"
+          [dialStartAngle]="180"
+          [dialEndAngle]="0"
+          [value]=value
+          [animated]="true"
+          [animationDuration]="2"
+        >
+        </mwl-gauge>
+      </div>
+    </mat-card-content>
+  </mat-card>
+  <div class="hint-card">
+    <button mat-icon-button color="accent" (click)="nextHint(-1)" [disabled]="index === 0">
+      <mat-icon>arrow_back_ios</mat-icon>
+    </button>
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>{{(hints[index])[0]}}</mat-card-title>
+        <mat-card-subtitle>
+          {{(hints[index])[1]}} Index {{index}}
+        </mat-card-subtitle>
+      </mat-card-header>
+    </mat-card>
+    <button mat-icon-button color="accent" (click)="nextHint(1)" [disabled]="index === 2">
+      <mat-icon>arrow_forward_ios</mat-icon>
+    </button>
+  </div>
+</div>
+

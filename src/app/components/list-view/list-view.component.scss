@@ -1,0 +1,23 @@
+.my-container {
+  padding-top: 56px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.example-card {
+  max-width: 400px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.example-header-image {
+  background-color: blueviolet;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+

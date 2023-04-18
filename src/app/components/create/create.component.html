@@ -1,0 +1,11 @@
+<div class="my-container">
+  <h1>Add new device</h1>
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Device ID</mat-label>
+      <input matInput #message maxlength="256" placeholder="IDXXXX">
+      <mat-hint align="start">Locate ID on the back of the device</mat-hint>
+      <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
+    </mat-form-field>
+  </form>
+</div>
