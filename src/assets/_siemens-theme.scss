@@ -1,0 +1,18 @@
+@use "@angular/material" as mat;
+@use "_siemens-colors" as col;
+
+@include mat.core();
+
+$my-app-primary: mat.define-palette(col.$siemens-primary);
+$my-app-accent: mat.define-palette(col.$siemens-secondary, 500, 300, 900);
+$my-app-warn: mat.define-palette(mat.$red-palette);
+
+$my-app-theme: mat.define-light-theme(
+    (
+      color: (
+        primary: $my-app-primary,
+        accent: $my-app-accent,
+        warn: $my-app-warn,
+      ),
+    )
+);
