@@ -13,7 +13,7 @@ export class OverviewComponent implements OnInit, OnDestroy {
   hints = [['Open Window', 'In case of slightly bad air quality do this basic instructions'],
     ['Some Hint', 'In case of slightly bad air quality do this basic instructions'],
     ['Some Hint', 'In case of slightly bad air quality do this basic instructions']];
-  active = false;
+  active = true;
 
   constructor(private measurementService: MeasurementService) {
   }

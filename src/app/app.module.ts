@@ -22,6 +22,9 @@ import {MatInputModule} from '@angular/material/input';
 import {MatCardModule} from '@angular/material/card';
 import {MatDividerModule} from '@angular/material/divider';
 import {GaugeModule} from 'angular-gauge';
+import {NgxChartsModule} from "@swimlane/ngx-charts";
+import {BargraphComponent} from './components/statistics-view/bargraph/bargraph.component';
+import {LinegraphComponent} from './components/statistics-view/linegraph/linegraph.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +35,8 @@ import {GaugeModule} from 'angular-gauge';
     ListViewComponent,
     StatisticsViewComponent,
     CreateComponent,
+    BargraphComponent,
+    LinegraphComponent,
   ],
   imports: [
     BrowserModule,
@@ -50,6 +55,7 @@ import {GaugeModule} from 'angular-gauge';
     MatCardModule,
     MatDividerModule,
     GaugeModule.forRoot(),
+    NgxChartsModule,
   ],
   bootstrap: [AppComponent]
 })
