@@ -1,16 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 @use "@angular/material" as mat;
-@use "./assets/_typography-siemens" as typography;
 @use "./assets/_siemens-theme" as theme;
 
 @include mat.core();
 @include mat.all-component-themes(theme.$my-app-theme);
-@include mat.core(typography.$my-app-typography);
-
-@font-face {
-  font-family: SiemensSansRoman;
-  src: url("./assets/Siemens Sans/Siemens Sans Roman/Siemens_Sans_Roman.ttf") format("truetype");
-}
 
 body {
   background-color: whitesmoke;
@@ -22,4 +15,5 @@ html, body {
 
 body {
   margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
