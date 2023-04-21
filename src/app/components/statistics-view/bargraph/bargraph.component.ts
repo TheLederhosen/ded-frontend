@@ -28,9 +28,5 @@ export class BargraphComponent {
   constructor() {
     Object.assign(this, {single});
   }
-
-  onSelect(event) {
-    console.log(event);
-  }
 }
 
